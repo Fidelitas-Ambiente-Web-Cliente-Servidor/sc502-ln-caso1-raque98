@@ -1,0 +1,144 @@
+:root {
+  --color-primario: #2C3E50;
+  --color-secundario: #E67E22;
+  --color-fondo: #FAF8F5;
+  --color-texto: #333333;
+  --color-claro: #FFFFFF;
+  --color-reserva-vip: #FFF3CD;
+
+  --fuente-titulo: 'Playfair Display', serif;
+  --fuente-cuerpo: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+.navbar {
+  background-color: var(--color-fondo) !important;
+  border-bottom: 1px solid #eadfd4;
+}
+
+.navbar-brand {
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  color: var(--color-primario);
+  font-size: 1.7rem;
+}
+
+.seccion-contenido {
+  background-color: var(--color-claro);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-seccion {
+  font-family: var(--fuente-titulo);
+  color: var(--color-primario);
+  margin-bottom: 20px;
+}
+
+.botones-filtro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.boton-filtro.activo {
+  background-color: var(--color-secundario);
+  border-color: var(--color-secundario);
+  color: white;
+}
+
+#Contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card-plato {
+  width: 22rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card-plato:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.etiqueta-categoria {
+  display: inline-block;
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.precio-plato {
+  color: var(--color-secundario);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.btn-reserva {
+  background-color: var(--color-secundario);
+  color: white;
+  border: none;
+}
+
+.btn-reserva:hover {
+  background-color: #c96a19;
+  color: white;
+}
+
+.btn-reserva:disabled {
+  background-color: #b8b8b8;
+  cursor: not-allowed;
+}
+
+.error-campo {
+  color: #c0392b;
+  font-size: 14px;
+  margin-top: 4px;
+  min-height: 20px;
+}
+
+.fila-reserva {
+  vertical-align: middle;
+}
+
+.fila-reserva.resaltado td {
+  background-color: var(--color-reserva-vip);
+}
+
+.resumen-reservas {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #eadfd4;
+  border-radius: 8px;
+  background-color: var(--color-fondo);
+}
+
+.resumen-reservas p {
+  margin-bottom: 6px;
+}
+.imagen-card {
+    height: 200px;
+    object-fit: cover;
+
+}
